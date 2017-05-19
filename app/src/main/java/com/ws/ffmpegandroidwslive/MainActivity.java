@@ -36,12 +36,10 @@ public class MainActivity extends AppCompatActivity {
         final Camera.PreviewCallback mPreviewCallbacx=new Camera.PreviewCallback() {
             @Override
             public void onPreviewFrame(byte[] arg0, Camera arg1) {
-                // TODO Auto-generated method stub
 
                 WSPlayer.start(arg0);
             }
         };
-
 
         mTakeButton=(Button)findViewById(R.id.take_button);
 
